@@ -1047,6 +1047,18 @@ cd yorick
 yorick -batch ./stepX_YYY.i
 ```
 
+### Zig
+
+*The Zig implementation was created by [Jacob MacDonald](https://github.com/jaccarmac)*
+
+The Zig implementation was written for Zig 0.3.0.
+
+```
+cd zig
+zig build
+zig-cache/stepX_YYY
+```
+
 
 
 ## Running tests
