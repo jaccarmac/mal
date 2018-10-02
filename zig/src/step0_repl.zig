@@ -2,7 +2,7 @@ const readLine = @import("std").io.readLine;
 const warn = @import("std").debug.warn;
 
 pub fn main() void {
-    var buf: [1000]u8 = undefined;
+    var buf: [1024]u8 = undefined;
     while (true) {
         warn("user> ");
         if (readLine(buf[0..])) |len| warn("{}\n", rep(buf[0..len]))
@@ -38,12 +38,12 @@ fn rep(input: []const u8) []const u8 {
 }
 
 fn flushStdIn() void {
-    var buf: [100]u8 = undefined;
+    var buf: [128]u8 = undefined;
     while (true) {
-        _ = readLine(buf[0..]) catch |err| switch(err) {
+        if (readLine(buf[0..])) return
+        else |err| switch(err) {
             error.InputTooLong => continue,
             else => return,
-        };
-        return;
+        }
     }
 }
