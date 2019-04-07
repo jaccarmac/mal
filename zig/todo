@@ -1,0 +1,12 @@
+So I have this branch apparently. Months ago I filed the below issue, seemingly
+without actually committing the code in question to this branch. Need to do my
+best to recreate it and the bug I was seeing.
+
+https://github.com/ziglang/zig/issues/1114
+
+Then check out the proposed solution and see if the ergonomics are good.
+
+Oh and update to latest Zig.
+
+Oh and this time actually compile the dang code to see if the Zig or LLVM IR is
+the way I think it is. Come on Jacob, you're a big boy.
