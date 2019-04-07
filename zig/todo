@@ -6,6 +6,8 @@ https://github.com/ziglang/zig/issues/1114
 
 Then check out the proposed solution and see if the ergonomics are good.
 
+https://github.com/ziglang/zig/issues/2174
+
 Oh and update to latest Zig.
 
 Oh and this time actually compile the dang code to see if the Zig or LLVM IR is
